@@ -13,7 +13,52 @@ const notFoundRouter = {
  * 获取后端路由信息的 axios API
  * @returns {Promise}
  */
-
+// var data = [
+//     {
+//       id: 1,
+//       title: '会员管理',
+//       name: '/admin/user',
+//       path: '/admin/user',
+//       is_show: false,
+//       childMenus: [
+//         {
+//           id: 2,
+//           title: '会员管理',
+//           name: '/admin/user',
+//           path: '/admin/user',
+//           is_show: false
+//         },
+//         {
+//           id: 2,
+//           title: '会员管理',
+//           name: '/admin/user',
+//           path: '/admin/user',
+//           is_show: false
+//         }
+//       ]
+  
+//     }
+//   ]
+  
+//   function menuBuild (data) {
+//     return data.map((v) => {
+//       const arr = {
+//         id: v.id,
+//         meta: {
+//           title: v.title
+//         },
+//         name: v.path,
+//         path: v.path,
+//         is_show: v.is_show
+//       }
+//       if (v.childMenus && v.childMenus.length > 0) {
+//         arr.children = menuBuild(v.childMenus)
+//       }
+//       return arr
+//     })
+//   }
+//   var a = menuBuild(data)
+//   console.log(a, 98989)
 export const getRouterByUser = () => {
     return axios({
         url: '/system/menu/user',

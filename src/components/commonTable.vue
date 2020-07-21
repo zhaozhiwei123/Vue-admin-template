@@ -19,6 +19,9 @@
       style="width: 100%"
       @select="select"
       @select-all="selectAll"
+      :tree-props = "treeProps"
+      row-key="id"
+      :default-expand-all="expandAll"
     >
       <el-table-column v-if="isSelection" type="selection" width="55">
       </el-table-column>
@@ -79,6 +82,16 @@ export default {
   },
   mounted () {},
   props: {
+    expandAll: {
+      type: Boolean,
+      default: false
+    },
+    treeProps: {
+      type: Object,
+      default: function () {
+        return { children: 'children', hasChildren: 'hasChildren' }
+      }
+    },
     // 是否需要分页
     isPagination: {
       type: Boolean,

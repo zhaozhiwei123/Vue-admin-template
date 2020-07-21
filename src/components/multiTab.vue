@@ -45,7 +45,7 @@ export default {
       if (this.fullPathList.length > 1) {
         console.log(data, this.$route.fullPath)
         var index = this.fullPathList.indexOf(data)
-        //判断删除的是是不是当前标签
+        // 判断删除的是是不是当前标签
         if (this.$route.fullPath == data) {
           // 判断如果这是在最右边的话
           if (index == this.fullPathList.length - 1) {

@@ -31,23 +31,22 @@
 </template>
 
 <script>
-  export default {
-    name: 'NavMenu',
-    props:{
-      navMenus:{
-        type:Array,
-        default:function(){
-          return []
-        }
+export default {
+  name: 'NavMenu',
+  props: {
+    navMenus: {
+      type: Array,
+      default: function () {
+        return []
       }
-    },
-    data() {
-      return {}
-    },
-    methods: {}
-  }
+    }
+  },
+  data () {
+    return {}
+  },
+  methods: {}
+}
 </script>
 
 <style>
 </style>
-

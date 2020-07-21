@@ -5,11 +5,14 @@
 </template>
 <script>
 export default {
-    
-    data(){
-        return {
 
-        }
+  data () {
+    return {
+
     }
+  },
+  mounted () {
+    console.log(this.$router, 898989)
+  }
 }
 </script>

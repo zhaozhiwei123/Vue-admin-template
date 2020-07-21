@@ -14,3 +14,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.space_around{
+    justify-content: space-around;
+}
+.space_between{
+    justify-content: space-between;
+}

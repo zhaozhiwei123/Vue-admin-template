@@ -24,13 +24,15 @@
   </div>
 </template>
 <script>
-import NavMenu from '../components/navMenu';
-import GlobalHeader from '../components/globalHeader';
-import MultiTab from '../components/multiTab';
+import NavMenu from '../components/navMenu'
+import GlobalHeader from '../components/globalHeader'
+import MultiTab from '../components/multiTab'
+
 export default {
   created () {},
   data () {
     return {
+
       activeIndex: 'aa',
       menuData2: [
         {
